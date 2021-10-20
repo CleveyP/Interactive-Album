@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<style>
+p {
+  color: red;
+  font-size: 30px;
+  font-family: sanscrit;
+}
+#div1 {
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.intentions {
+	text-align: center;
+	color: red;
+}
+body{
+		border: groove 30px black;
+	background-image: url("https://pbs.twimg.com/media/BlGVAfgCEAAOv7V?format=png&name=small");
+    height: calc(100vh - 94px);
+    overflow: scroll;
+}
+.poem {
+opacity: 0;
+ color: black;
+ background-color: yellow;
+ font-size: 15px;
+ text-align: left-side;
+}
+ </style>
+  <meta name="veiwport" content="width=device-width, initial-scale = 1.0">
+  <title>WebPage</title>
+</head>
+<body style="background-color:blue;" >
+
+<h1>Welcome to Cleveland Piranha</h1>
+
+<p class ="intentions">The intentions behind this page are to graphically illustrate the chorale.</p>
+<div id= "div1"> 
+<p>set the mood</p>
+<img src="Piranha-Or-Not.jpg" alt="W3Schools.com" width="300" height="342">
+
+</div>
+<p class = "poem" ><strong>To err is human. To smell is bonsai. </strong><br>
+
+They just pass by. <br>
+Those people could move the earth.  <br>
+and take a tree up in their hand <br>
+They just pass by. <br>
+I know that a shark may die if it stops moving. <br>                                 
+Locomotion is human.<br>
+Static is bonsai.
+</p>
+<button onclick="toPage('plane.html')"> portal to another plane</button>
+<audio controls  onplay="fadeIn(poem, 6000)">
+
+<p>"on the porch"</p>
+  <source src="ontheporch.m4a" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+<script src="javascript.js"> </script>
+
+</body>
+</html>

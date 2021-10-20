@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<style>
+p {
+  color: purple;
+  font-size: 25px;
+}
+#div1 {
+	background-color: orange;
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.poem {
+opacity: 0;
+ color: black;
+ background-color: yellow;
+ font-size: 15px;
+ text-align: left-side;
+}
+body{
+	border: solid 30px black;
+	background-color: red;
+    height: calc(100vh - 94px);
+    overflow: scroll;
+}
+ </style>
+  <meta name="veiwport" content="width=device-width, initial-scale = 1.0">
+  <title>Cleveland Plane</title>
+</head>
+<body style="background-color:red;">
+
+<h1>Welcome to Cleveland Plane</h1>
+
+<div id= "div1"> 
+<p>Here.</p>
+<img src="alienplane.jfif" alt="W3Schools.com" width="600" height="342">
+</div>
+
+<p class="poem">
+I see everything through my own eyes<br>
+So then I suppose <br>
+I know all the things around me<br>
+When I sleep I enter <br>
+To be unconscious is to enter my universe <br>
+  I am always dreaming<br>
+As long as I keep it tightly fit around me<br>
+<strong>I am the Master of My Own Universe</strong> <br>
+        As long as I keep it tightly fit around me<br>
+        I have trouble sleeping<br>
+        To be unconscious is to exit my universe <br>
+        When I wake I reenter<br>
+        But things are not how I left them<br>
+        So then I suppose<br>
+        I just borrow my own universe<br>
+</p>
+
+<button onclick="toPage('underworld.html')"> turn over a new leaf</button>
+
+<audio controls  onplay="fadeIn(poem, 6000)">
+<p>"Minuet in D"</p>
+  <source src="minuetInD.m4a" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+
+<script src="javascript.js"> </script>
+
+</body>
+</html>

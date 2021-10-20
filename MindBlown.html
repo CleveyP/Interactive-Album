@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<style>
+p {
+  color: orange;
+  background-color: purple;
+  font-size: 30px;
+}
+h1{
+color: red;
+background-color: black;
+}
+button{
+	align: center;
+}
+#div1 {
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.intentions {
+	color: orange;
+	background-color: purple;
+}
+.poem {
+ color: black
+ background-color: yellow;
+ font-size: 15px;
+ opacity: 0;
+}
+.emphasis{
+color: red;
+
+}
+body{
+		border: groove 30px black;
+	background:  center /  cover no-repeat url("Connect.jpg") ;	
+    height: calc(100vh - 94px);
+    overflow: s-resize;
+}
+#mover{
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	height: 40px;
+	width: 40px;
+	background: blue;
+	color: red;
+	font-size: 18px;
+}
+
+#mover{
+	animation-duration: 10s;
+	animation-name: moveanimation;
+	animation-iteration-count:infinite;
+	background-color: green;
+}
+@keyframes moveanimation{
+	from{
+		top:0px;
+		left: 0px;
+	}
+	to{
+		top: 100%;
+		left: 100%;
+	}
+}
+ </style>  
+ <meta name="veiwport" content="width=device-width, initial-scale = 1.0">
+ <title>Awake</title>
+</head>
+<body>
+<p id="mover">TS+SESTSGSN</p>
+<h1>WTF#$#$$#$%</h1>
+
+<p class ="intentions"><sub>Try to Get Ahold of Yourself  --</sub><sup><em>Don't work too Hard</em></sup></p>
+<div id= "div1"> 
+<p><del>What is going on here is that I became confused.</del></p>
+<img src="blastoff.png" alt="W3Schools.com" width="300" height="342">
+
+</div>
+<p class="poem">
+<strong>It’s spiraling around you now<strong/> <br>
+It just doesn’t make sense<br>
+The phases are discombobulated so it’s nonsense <br>>
+What is unsettling is soothing<br>
+It is now  impossible to sleep<br>
+The melody is in eleven <br>
+Moving<br>
+ fall upward to the deep<br>
+Awake in disarray <br>
+The airplane fade<br>
+<span class="emphasize">Objects lie in unordered sets about your room</span><br>
+Inside lemonade<br>
+And outside for all you know<br>
+<small>But you know that moths migrate upward toward the moon </small><br>
+
+</p>
+
+<button onclick="toPage('break_lights.html')"> portal to another plane</button>
+<audio controls onplay="fadeIn(poem, 22000)">
+  <source src="MindBlown.m4a" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+<script src="javascript.js"> </script>
+
+</body>
+</html>

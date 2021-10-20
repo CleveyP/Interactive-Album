@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<style>
+p {
+  color: orange;
+  background-color: purple;
+  font-size: 30px;
+}
+h1{
+color: red;
+background-color: black;
+}
+button{
+	align: center;
+}
+#div1 {
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.intentions {
+	color: orange;
+	background-color: purple;
+}
+.poem {
+ color: black
+ background-color: yellow;
+ font-size: 15px;
+ opacity: 0;
+}
+body{
+		border: groove 30px black;
+	background-image: url("blackandyellow.JPG");	
+    height: calc(100vh - 94px);
+    overflow: s-resize;
+	background-size 100%,100%;
+}
+ </style>
+  <meta name="veiwport" content="width=device-width, initial-scale = 1.0">
+  <title>Underworld</title>
+</head>
+<body>
+
+<h1>Welcome to  the  Underworld</h1>
+
+<p class ="intentions">Sister to Sisyphos  --<em>Specified Specificicity</em></p>
+<div id= "div1"> 
+<p>Talk to Ghosts</p>
+<img src="board.jpg" alt="W3Schools.com" width="300" height="342">
+
+</div>
+<p class="poem">
+<strong>The Hour Glass</strong> <br>
+        There goes my vindication <br>
+        One more grain falls as I approach the hour <br>
+        The hour of worthlessness <br>
+        There slips through my clumsy fingers <br>
+        All noncommittal <br>
+        It is futile to try to stop time<br>
+        The clock moves; my resignation<br>
+        I am finished<br>
+        at the end of the hour<br>
+        Another grain follows through my fingers <br>
+        There goes my dedication as I am rendered <br>
+        Doomed and hollow<br>
+       The sand progresses as I diminish<br>
+       The hourglass will drain <br>
+       All of me away<br>
+</p>
+
+<button onclick="toPage('jazzified.html')"> portal to another plane</button>
+<audio controls onplay="fadeIn(poem, 6000)">
+  <source src="Ouija.m4a" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+<script src="javascript.js"> </script>
+
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<style>
+    html{
+        border: 3px solid yellow;
+    }
+p {
+  color: yellow;
+  background-color: black;
+  font-size: 30px;
+}
+h1{
+color: red;
+background-color: black;
+text-align: center;
+text-shadow: yellow 10px 10px;
+}
+button{
+position:relative;
+left: 0px;
+height: 50px;
+width: 600px;
+color: black;
+background-color: red;
+margin: 5px;
+}
+#div1 {
+	display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#div2, #div3, #div4, #div5, #div6, #div7{
+    height: 80px;
+    width: 80px;
+    
+    border: black solid 3px;
+    margin: 10px;
+
+    
+}
+.intentions {
+	color: yellow;
+	background-color: black;
+    text-shadow: red 10px 10px;
+}
+.poem {
+ color: black;
+ background-color: yellow;
+ font-size: 15px;
+ opacity: 0;
+}
+.emphasize{
+color: red;
+}
+body{
+		border: groove 30px black;
+	background:  center /  cover no-repeat url("traffic_jam.jpg") ;	
+    background-size: cover;
+    overflow: s-resize;
+}
+#mover{
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	height: 80px;
+	width: 120px;
+	background: black;
+	color: red;
+	font-size: 30px;
+    border:black 3px solid;
+    border-radius: 10px;
+}
+
+#mover{
+	animation-duration: 10s;
+	animation-name: moveanimation;
+	animation-iteration-count:infinite;
+	background-color: gray;
+}
+@keyframes moveanimation{
+	from{
+		top:0px;
+		left: 0px;
+	}
+	to{
+		top: 100%;
+		left: 100%;
+	}
+}
+ </style>  
+ <meta name="veiwport" content="width=device-width, initial-scale = 1.0">
+ <title>Break Lights Ahead</title>
+</head>
+<body>
+<p class="blinking" id="mover">CARS!</p>
+<h1>FASTER YET FASTER STILL AHEAD IS THAT TRAFFIC</h1>
+
+<p class ="intentions"><sub>There Appaers to be a Traffic Jam on the 580  --</sub><sup><em>There is Nothing You can Do</em></sup></p>
+<div id= "div1"> 
+    <div>
+        <div id="div5"  class="blinking"></div>
+        <div id="div6" class="blinking"></div>
+        <div id="div7" class="blinking"></div>
+    </div>
+    <div>   
+<p><del>___O_|__ T___\(____O__|__O____)>__T__|_O___</del></p>
+<img id="car-picture" src="car_pictures/sleekhondadriving.jpg" alt="W3Schools.com" width="650" height="342">
+    </div>
+    <div>
+        <div id="div2" class="blinking"></div>
+        <div id="div3" class="blinking"></div>
+        <div id="div4" class="blinking"></div>
+    </div>
+</div>
+<p class="poem">
+<strong>The strength is found in the <em>Heart</em> of the doomed Honda Accord.<strong/> <br>
+The blur and the Locomotion if It doesn't stop<br>
+There is going to be a slight problem with the nav <br>
+The freeway seems to be in order and everybody is getting along.<br>
+To take the steering wheel by the hand is to take destiney by the hand!<br>
+Just don't drive too fast. <br>
+Or you will die driving the Honda Accord.<br>
+ fall upward to the deep<br>
+The freeway can despose of you<br>
+Fade into the double lines.<br>
+<span class="emphasize">The tires grind the asphalt and leave rubber behind.</span><br>
+Inside the night and the hot day<br>
+And outside the dusty sidelines where the cattle graze.<br>
+<small>But you know that you were going really fast. </small><br>
+
+</p>
+
+<button onclick="toPage('webPage.htm')"> portal to another plane</button>
+<audio controls onplay="fadeIn(poem, 22000); colorStarter()" onpause="colorStop()" loop="true">
+  <source src="breaklightsahead.m4a" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+<script src="javascript.js"> </script>
+
+</body>
+</html>

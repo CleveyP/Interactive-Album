@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<style>
+#theImg {
+
+opacity: 0;
+}
+p {
+  color: black;
+  background-color: yellow;
+  font-size: 30px;
+}
+h1{
+color: red;
+background-color: black;
+}
+button{
+	align: center;
+}
+#div1 {
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.intentions {
+	color: yellow;
+	background-color: black;
+}
+.poem {
+ color: black
+ background-color: yellow;
+ font-size: 15px;
+ opacity: 0;
+}
+body{
+		border: groove 30px black;
+	background:  center /  cover no-repeat url("Dementor.JPG") ;
+    height: calc(100vh - 94px);
+    overflow: s-resize;
+	
+}
+ </style>
+ <meta name ="veiwport" content= "width=device-width, initial-scale=1.0">
+  <title>This is it</title>
+</head>
+<body>
+
+<h1>Welcome to  Tomorrow</h1>
+
+<p class ="intentions">This is the End --<em>I have Overexerted Myself</em></p>
+<div id= "div1"> 
+<p>Another Day Again</p>
+<img  id = "theImg" src="jupiter.JPG" alt="W3Schools.com" width="300" height="342">
+
+</div>
+<p class="poem">
+<strong>Against All Odds</strong> <br>
+        Awaken from sleep to rise and implement the day<br>
+        The sub routines ...<br>
+        We are all confused about what to do next<br>
+        Someone must have corrupted the integridy of the call stack<br>
+		In a garden unfamiliar<br>
+        All the tickets are out of order<br>
+        The clock marches onward and so it has become a matter of endurance<br>
+        to get through the day <br>
+        To do next: this question is impossible to answer in fixed time<br>
+		Lunch time <br>
+        Calculating priorities...<br>
+       What was integral is actually not advisable at this point.<br>
+	   In the middle of the night<br>
+       It turns out we bit off more than we could chew and promised too many features. <br>
+       Just go to sleep to rise and implement tomorrow
+</p>
+
+<button onclick="toPage('MindBlown.html')"> portal to another plane</button>
+<audio controls onplay="fadeIn(poem, 6000), fadeIn(theImg, 6000)">
+  <source src="lambears.m4a" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+<script src="javascript.js"> </script>
+
+</body>
+</html>
