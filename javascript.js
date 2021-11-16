@@ -18,6 +18,10 @@ var blinkingDivs = document.getElementsByClassName("blinking");
 let carArray = ["hondaonsoil.jpg", "hondafromback.jpeg", "sleekhondadriving.jpg", "hondainside.jpg", "hondaandtree.jpeg", "hondaindriveway.jpg", "hondaonsidewalk.jpeg","hondaInterior.jpg"];
 var carPicture = document.getElementById("car-picture");
 var carCounter = 0;
+
+let shrewArray = ["eastershrew.jpg", "jumpingshrew.jpeg", "sandyshrew.jpg", "shrewcoin.png", "watershrew.jpg", "sandshrew.jpg"];
+var shrewPicture = document.getElementById("shrew-picture");
+var shrewCounter = 0;
 //var audio = document.getElementsByTagName('audio');
 //audio[0].addEventListener('play', fadeIn(poem,3000), false);
 
@@ -43,6 +47,15 @@ function changeCar(){
   carPicture.src = "car_pictures/" + carArray[carCounter];
   carCounter++;
 }
+
+function changeShrew(){
+  if(shrewCounter>= shrewArray.length){
+    shrewCounter =0;
+  }
+  shrewPicture.src = "shrew_pictures/" + shrewArray[shrewCounter];
+  shrewCounter++;
+}
+
 function changeColor(){
   let r = Math.floor(Math.random() * 250);
   let g = Math.floor(Math.random() * 250);
@@ -57,12 +70,33 @@ function changeColor(){
    //poem.style.backgroundColor = (poem.style.backgroundColor == "yellow") ? ((i+3%3) ? "white" : "green") : "yellow";
   }
 }
+
+function changeColorShrew(){
+  let r = Math.floor(Math.random() * 0);
+  let g = Math.floor(Math.random() * 0);
+  let b = Math.floor(Math.random() * 0);
+  for(let i=0, j=0; i<blinkingDivs.length; i++, j++){
+     r = Math.floor(Math.random() * 0);
+     g = Math.floor(Math.random() * 250);
+     b = Math.floor(Math.random() * 100);
+    blinkingDivs[i].style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
+    
+    
+   //poem.style.backgroundColor = (poem.style.backgroundColor == "yellow") ? ((i+3%3) ? "white" : "green") : "yellow";
+  }
+}
 let colorToggle;
 let carToggle;
 function colorStarter(){
   colorToggle =setInterval(changeColor, 400);
   colorToggle =setInterval(changeCar, 3000);
 }
+
+function colorStarterShrew(){
+  colorToggle =setInterval(changeColorShrew, 400);
+  colorToggle =setInterval(changeShrew, 3000);
+}
+
 
 function colorStop(){
 clearInterval(colorToggle);
