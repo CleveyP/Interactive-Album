@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<style>
+    html{
+        border: 3px solid navy;
+    }
+
+   .blinking{
+       border-radius: 25px;
+   } 
+p {
+  color: yellow;
+  background-color: green;
+  font-size: 30px;
+}
+h1{
+color: navy;
+background-color: darkgreen;
+text-align: center;
+
+}
+button{
+position:relative;
+left: 0px;
+height: 50px;
+width: 600px;
+color: black;
+background-color: beige;
+margin: 5px;
+}
+#div1 {
+	display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#div2, #div3, #div4, #div5, #div6, #div7{
+    height: 120px;
+    width: 120px;
+    margin: 0;
+
+    
+}
+.intentions {
+	color: yellow;
+	background-color: black;
+}
+.poem {
+ color: black;
+ background-color: beige;
+ font-size: 15px;
+ opacity: 0;
+}
+.emphasize{
+color: red;
+}
+body{
+	border: groove 30px navy;
+	background:  center /  cover no-repeat url("prairiebackground.jpg") ;	
+    background-size: cover;
+    overflow: s-resize;
+}
+#mover{
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	height: 200px;
+	width: 200px;
+	
+    border:none;
+    border-radius: 10px;
+}
+
+#mover{
+	animation-duration: 10s;
+	animation-name: moveanimation;
+	animation-iteration-count:infinite;
+}
+@keyframes moveanimation{
+	from{
+		top:0px;
+		left: 0px;
+	}
+	to{
+		top: 100%;
+		left: 100%;
+	}
+}
+ </style>  
+ <meta name="veiwport" content="width=device-width, initial-scale = 1.0">
+ <title>Pour la Aura</title>
+</head>
+<body>
+<img id="mover" src="shrewbackground.jpg"/>
+<h1>Happy Birthday Aura!!</h1>
+
+<p class ="intentions"><em>You are Turning 25 Today!</em></p>
+<div id= "div1"> 
+    <div>
+        <div id="div5"  class="blinking"></div>
+        <div id="div6" class="blinking"></div>
+        <div id="div7" class="blinking"></div>
+    </div>
+    <div>   
+<p>YOU GO SHREW YOU GO!</p>
+<img id="shrew-picture" src="shrew_pictures/eastershrew.jpg" alt="W3Schools.com" width="650" height="342">
+    </div>
+    <div>
+        <div id="div2" class="blinking"></div>
+        <div id="div3" class="blinking"></div>
+        <div id="div4" class="blinking"></div>
+    </div>
+</div>
+<p class="poem">
+It's a Foggy one. <br>
+Ephemeral<br>
+As you get out the car<br>
+To see your shrew<br>
+Extraterrestrial on the TV<br>
+You want to believe<br>
+This is happening to you.<br>
+Every weekend<br>
+And sometimes on a day between<br>
+get out the car<br>
+<span class="emphasize">To see your shrew</span><br>
+</p>
+
+<button onclick="toPage('webPage.htm')"> portal to another plane</button>
+<audio controls onplay="fadeIn(poem, 22000); colorStarterShrew()" onpause="colorStop()" loop="true">
+  <source src="foraura.m4a" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+<script src="javascript.js"> </script>
+
+</body>
+</html>
